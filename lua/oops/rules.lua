@@ -96,6 +96,7 @@ rules.lua_with_b = {
 	end
 };
 
+----------------------------------------------------------------------
 
 --- :moh → :noh
 rules.moh = {
@@ -119,7 +120,7 @@ rules.sub_wo_slash = {
 	end,
 
 	fix = function (prompt, command)
-		return prompt, string.gsub(command, "^s[^/]", "s/");
+		return prompt, string.gsub(command, "^s", "s/");
 	end
 };
 
