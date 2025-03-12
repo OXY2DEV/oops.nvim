@@ -112,10 +112,10 @@ Configuration table structure is given below,
 --- Rules.
 ---@field rules table<string, oops_rule>
 oops.config = {
-	force = false,
-	ignore_kinds = { "input", "expr" },
+    force = false,
+    ignore_kinds = { "input", "expr" },
 
-	rules = {
+    rules = {
         q_quote = {
             condition = function (prompt, command)
                 if prompt ~= "cmd" then return; end
