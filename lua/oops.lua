@@ -163,7 +163,7 @@ oops.fix = function (kind, force)
 	else
 		local name, rule = oops.__can_fix(kind, last_command);
 
-		if name == nil then
+		if name == nil or rule == nil then
 			return;
 		end
 
